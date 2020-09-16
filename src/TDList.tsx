@@ -1,13 +1,9 @@
 import React, {EventHandler, useState}  from 'react';
 
+
 interface Props {
     addNewTask: () => void;
 }
-
-// Todo
-// create a new function that will 
-// 1. Add new task to var tasks
-// 2. Call updateTasks
 
 interface Task{
     id: number;
@@ -49,10 +45,8 @@ export const TDList = () => {
                     onChange = {e => setTaskName(e.target.value)}
                     value={taskName}
                     />
-                    <button onClick={() =>() => addNewTask("FUCK REACT HOOKS")}>Add  New Task</button>
+                    <button type="submit">Add  New Task</button>
                 </form>
-                <button onClick= {() =>{addNewTask("sup")}}>Add  New Task</button>
-
             </div>
         
     );
